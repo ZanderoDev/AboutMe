@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZanderoDev | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        nav {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px 8%;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 80px);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #38bdf8;
+            color: #020617;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 25px;
+            background: #1e293b;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .card p {
+            color: #94a3b8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>ZanderoDev~</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <p>Hello, I'm</p>
+
+            <h1>Ilham <span>ZanderoDev</span></h1>
+
+            <p>
+                Developer, programmer, and cybersecurity enthusiast.
+                I build web applications, tools, and security projects.
+            </p>
+
+            <div class="buttons">
+                <a class="btn" href="#projects">View Projects</a>
+
+                <a class="btn secondary"
+                   href="https://github.com/"
+                   target="_blank">
+                    GitHub
+                </a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Saya adalah developer yang tertarik pada programming,
+                web development, cybersecurity, dan berbagai eksperimen
+                teknologi.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="projects">
+
+                <div class="card">
+                    <h3>Project One</h3>
+
+                    <p>
+                        Website atau aplikasi yang sedang saya kembangkan.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Project Two</h3>
+
+                    <p>
+                        Tools dan project programming lainnya.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>CTF Projects</h3>
+
+                    <p>
+                        Eksperimen cybersecurity dan Capture The Flag.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/"
+                   target="_blank">
+                    github.com/ZanderoDev
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 ZanderoDev. All rights reserved.
+    </footer>
+
+</body>
+</html>
